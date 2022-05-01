@@ -5,7 +5,7 @@ app.use(bodyParser.json());
 
 require("./db");
 
-app.use("/email", require("./controller/email-controller"));
+app.use("/User", require("./controller/user-controller"));
 
 app.listen(3000, () => {
   console.log(`listening on port 3000,server started..`);
